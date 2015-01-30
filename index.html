@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Grunt-ejsmin by adam1985</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Grunt-ejsmin</h1>
+        <h2>ejs模板压缩</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/adam1985/grunt-ejsmin/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/adam1985/grunt-ejsmin/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/adam1985/grunt-ejsmin" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="ejsmin" class="anchor" href="#ejsmin" aria-hidden="true"><span class="octicon octicon-link"></span></a>ejsmin</h1>
+
+<blockquote>
+<p>ejs模板压缩</p>
+</blockquote>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<p>This plugin requires Grunt.</p>
+
+<p>If you haven't used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a> as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:</p>
+
+<div class="highlight highlight-shell"><pre>npm install grunt-ejsmin --save-dev</pre></div>
+
+<p>Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:</p>
+
+<div class="highlight highlight-js"><pre>grunt.loadNpmTasks(<span class="pl-s1"><span class="pl-pds">'</span>grunt-ejsmin<span class="pl-pds">'</span></span>);</pre></div>
+
+<h2>
+<a id="the-ejsmin-task" class="anchor" href="#the-ejsmin-task" aria-hidden="true"><span class="octicon octicon-link"></span></a>The "ejsmin" task</h2>
+
+<h3>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h3>
+
+<p>In your project's Gruntfile, add a section named <code>ejsmin</code> to the data object passed into <code>grunt.initConfig()</code>.</p>
+
+<div class="highlight highlight-js"><pre>grunt.initConfig({
+  ejsmin<span class="pl-k">:</span> {
+    options<span class="pl-k">:</span> {
+      <span class="pl-c">// Task-specific options go here.</span>
+    },
+    your_target<span class="pl-k">:</span> {
+      <span class="pl-c">// Target-specific file lists and/or options go here.</span>
+    },
+  },
+})</pre></div>
+
+<h3>
+<a id="usage-examples" class="anchor" href="#usage-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage Examples</h3>
+
+<h4>
+<a id="default-options" class="anchor" href="#default-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Default Options</h4>
+
+<p>In this example, the default options are used to do something with whatever. So if the <code>testing</code> file has the content <code>Testing</code> and the <code>123</code> file had the content <code>1 2 3</code>, the generated result would be <code>Testing, 1 2 3.</code></p>
+
+<div class="highlight highlight-js"><pre>grunt.initConfig({
+    ejsmin<span class="pl-k">:</span> {
+      dist<span class="pl-k">:</span> {
+        files<span class="pl-k">:</span> [{
+            expand<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+            cwd<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>test/fixtures/<span class="pl-pds">'</span></span>,
+            ext<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>.html<span class="pl-pds">'</span></span>,
+            dest<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>tmp<span class="pl-pds">'</span></span>,
+            src<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>{,*/}*.html<span class="pl-pds">'</span></span>
+        }]
+      }
+    }
+})</pre></div>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using <a href="http://gruntjs.com/">Grunt</a>.</p>
+
+<h2>
+<a id="release-history" class="anchor" href="#release-history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release History</h2>
+
+<p><em>(Nothing yet)</em></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright (c) 2015 adam1985. Licensed under the MIT license.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
